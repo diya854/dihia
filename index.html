@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Masque Cheveux New Hair : des soins pour tous les types de cheveux. Masques anti-chute, détox, protection UV, volumisant, anti-frisottis, réparateur intense, lissant, et nourrissant pour cheveux bouclés. Formulés avec des ingrédients naturels pour sublimer, nourrir et réparer les cheveux.">
+    <meta name="keywords" content="masque cheveux, New Hair,soin capillaire formulé avec des ingrédients naturels: huile de ricin, argile verte, masque anti-chute, masque détox, masque protection UV, masque volumisant, masque anti-frisottis, Masque Nourrissant pour Cheveux Bouclés, soin cheveux naturels">
+
+    <title>Masque Cheveux New Hair</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Style global */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* En-tête */
+        header {
+            background: linear-gradient(135deg, #7ED957, #5A9);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #FFD700; /* Gold */
+        }
+
+        /* Sections */
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        section:hover {
+            transform: translateY(-2px);
+        }
+
+        h2 {
+            color: #5A9;
+            font-size: 2em;
+            border-bottom: 2px solid #5A9;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            color: #7ED957;
+            font-weight: 700; /* Bold */
+            margin-top: 20px;
+        }
+
+        /* Image */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Formulaire */
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        label {
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #5A9;
+            border-radius: 5px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        input:focus, textarea:focus {
+            border-color: #7ED957;
+            box-shadow: 0 0 5px rgba(126, 217, 87, 0.5);
+            outline: none;
+        }
+
+        button {
+            padding: 10px;
+            background: #5A9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        button:hover {
+            background: #4A8;
+            transform: scale(1.05);
+        }
+
+        /* Pied de page */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #5A9;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+/* Styles pour les produits */
+#produit {
+    display: flex;               /* Utilise le modèle de boîte flexible */
+    flex-wrap: wrap;            /* Permet aux produits de passer à la ligne si l'espace est insuffisant */
+    justify-content: space-around; /* Espace égal entre les produits */
+}
+
+.produit {
+    margin: 20px;               /* Ajoute de l'espace autour de chaque produit */
+    text-align: center;         /* Centre le texte */
+    transition: transform 0.3s; /* Ajoute un effet de transition */
+    flex: 0 1 calc(25% - 40px); /* Définit une largeur de 25% moins l'espace de marge */
+    max-width: 250px;           /* Largeur maximale pour les produits */
+    display: flex;              /* Utilise le modèle de boîte flexible pour le produit */
+    flex-direction: column;     /* Aligne les éléments verticalement */
+    align-items: center;        /* Centre les éléments horizontalement */
+}
+
+.produit:hover {
+    transform: scale(1.02);     /* Effet de zoom au survol */
+}
+
+.produit img {
+    max-width: 100%;            /* L'image prend toute la largeur de son conteneur */
+    height: auto;               /* Maintient le ratio d'aspect de l'image */
+}
+
+.produit h4 {
+    color: #5A9;                /* Couleur pour le nom du masque */
+    margin-top: 10px;           /* Marge supérieure */
+}
+
+.produit .prix {
+    font-size: 1.2em;           /* Taille de la police pour le prix */
+    color: #FFD700;             /* Couleur dorée pour le prix */
+    margin: 10px 0;             /* Marges supérieure et inférieure */
+}
+
+.produit p.description {
+    font-size: 0.9em;           /* Taille de la police pour la description */
+    color: #555;                /* Couleur pour la description */
+}
+
+
+        .reseaux-sociaux a:hover {
+            color: #FFD700; /* Gold */
+        }
+
+        /* Animation de chargement */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section {
+            animation: fadeIn 0.5s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Masque Cheveux New Hair</h1>
+        <nav>
+            <ul>
+                <li><a href="#produit">Notre Produit</a></li>
+                <li><a href="#ingredients">Ingrédients</a></li>
+                <li><a href="#avis">Avis Clients</a></li>
+                <li><a href="#media">Médias</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="produit">
+        <h2>Découvrez notre gamme de Masques New Hair</h2>
+        <img src="image Masque Cheveux New Hair.jpg" alt="Masque Cheveux New Hair" />
+        <p>Notre gamme de masques capillaires New Hair est formulée avec des ingrédients naturels pour répondre à tous vos besoins capillaires.</p>
+
+        <!-- Produits mis à jour -->
+        <div class="produit">
+            <h4>Masque Anti-Chute</h4>
+            <img src="image Masque Anti-Chute.jpg" alt="Masque Anti-Chute" />
+            <p class="prix">Prix du Masque Anti-Chute : 25€</p>
+            <p class="description">Renforce les racines et stimule la croissance des cheveux grâce à la biotine et l'huile de ricin.</p>
+        </div>
+
+        <div class="produit">
+            <h4>Masque Détox</h4>
+            <img src="image Masque Détox.jpg" alt="Masque Détox" />
+            <p class="prix">Prix du Masque Détox : 20€</p>
+            <p class="description">Nettoie et purifie en profondeur avec de l'argile verte et du charbon actif.</p>
+        </div>
+
+        <div class="produit">
+            <h4>Masque Protection UV</h4>
+            <img src="image Masque Protection UV.jpg" alt="Masque Protection UV" />
+            <p class="prix">Prix du Masque Protection UV : 30€</p>
+            <p class="description">Protège les cheveux des dommages causés par le soleil avec de l'huile de tournesol et de la vitamine E.</p>
+        </div>
+        
+        <div class="produit">
+            <h4>Masque Volumisant</h4>
+            <img src="image Masque Volumisant.jpg" alt="Masque Volumisant" />
+            <p class="prix">Prix du Masque Volumisant : 22€</p>
+            <p class="description">Ajoute du volume et de la texture avec de l'extrait de fleur d'hibiscus et de l'aloé vera.</p>
+        </div>
+
+        <div class="produit">
+            <h4>Masque Anti-Frisottis</h4>
+            <img src="image Masque Anti-Frisottis.jpg" alt="Masque Anti-Frisottis" />
+            <p class="prix">Prix du Masque Anti-Frisottis : 28€</p>
+            <p class="description">Lisse les cheveux et réduit les frisottis grâce à l'huile de jojoba et au beurre de karité.</p>
+        </div>
+
+        <div class="produit">
+            <h4>Masque Nourrissant pour Cheveux Bouclés</h4>
+            <img src="image Masque Nourrissant.jpg" alt="Masque Nourrissant pour Cheveux Bouclés" />
+            <p class="prix">Prix du Masque Nourrissant : 26€</p>
+            <p class="description">Hydrate et nourrit les boucles avec de l'huile de noix de coco et de l'extrait de miel.</p>
+        </div>
+    </section>
+
+    <section id="ingredients">
+        <h2>Ingrédients Clés</h2>
+        <h3>Ingrédients Naturels</h3>
+        <ul>
+            <li>Biotine : Renforce les cheveux et favorise leur croissance.</li>
+            <li>Huile de Ricin : Stimule le cuir chevelu et nourrit les cheveux.</li>
+            <li>Argile Verte : Purifie et absorbe les impuretés.</li>
+            <li>Charbon Actif : Élimine les toxines et les résidus.</li>
+            <li>Huile de Tournesol : Protège contre les UV et hydrate les cheveux.</li>
+            <li>Extrait de Fleur d'Hibiscus : Ajoute volume et brillance.</li>
+            <li>Kératine : Répare et renforce la structure des cheveux.</li>
+            <li>Huile d'Argan : Nourrit et hydrate en profondeur.</li>
+            <li>Huile de Coco : Pénètre en profondeur et revitalise les cheveux.</li>
+            <li>Protéines de Soie : Lissent et améliorent la texture des cheveux.</li>
+            <li>Beurre de Karité : Hydrate et protège contre les agressions.</li>
+            <li>Extrait de Miel : Nourrit et maintient l'hydratation des cheveux.</li>
+        </ul>
+        
+        <h3>Comment utiliser le masque pour des cheveux brillants :</h3>
+        <ol>
+            <li>Appliquer sur cheveux lavés et essorés.</li>
+            <li>Laisser poser 10-15 minutes.</li>
+            <li>Rincer abondamment.</li>
+        </ol>
+    </section>
+
+    <section id="media">
+        <h2>Médias</h2>
+
+        <h3>Regardez notre vidéo sur le Masque Cheveux New Hair</h3>
+        <video width="100%" controls>
+            <source src="votre_video.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la vidéo.
+        </video>
+
+        <h3>Écoutez notre présentation du masque réparateur</h3>
+        <audio controls>
+            <source src="votre_audio.mp3" type="audio/mpeg">
+            Votre navigateur ne supporte pas l'audio.
+        </audio>
+    </section>
+
+    <section id="avis">
+        <h2>Avis Clients</h2>
+        <div class="avis">
+            <p><strong>Marie :</strong> "J'ai essayé le masque anti-chute et j'ai remarqué une réelle différence. Mes cheveux sont plus épais!"</p>
+            <p><strong>Luc :</strong> "Le masque détox a complètement nettoyé mes cheveux. Je le recommande vivement!"</p>
+            <p><strong>Claire :</strong> "Le masque nourrissant pour cheveux bouclés a fait des merveilles sur mes boucles. Elles sont super définies!"</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-Nous</h2>
+        <form action="#" method="post">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Suivez-nous sur les réseaux sociaux :</p>
+        <div class="reseaux-sociaux">
+            <a href="https://facebook.com" target="_blank">Facebook</a>
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2024 Masque Cheveux New Hair. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
